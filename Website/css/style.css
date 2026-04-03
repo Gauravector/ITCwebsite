@@ -1,0 +1,189 @@
+
+
+  /* ── Reset: remove default browser spacing ── */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ── Page background and font ── */
+  body {
+    font-family: Arial, sans-serif;
+    background: #DDFDFE;
+    color: #222;
+  }
+
+  /* ── Navbar ── */
+  nav {
+    background: #25A18E;
+    padding: 16px 40px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  nav span {
+    color: #FFB8D1;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: auto; /* pushes links to the right */
+  }
+
+
+  /* ── Each section ── */
+  section {
+    padding: 60px 80px;
+  }
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003f7f;
+  }
+
+  /* Home hero section */
+  #home {
+    background: #0a1628;        /* dark blue background */
+    color: white;
+    text-align: center;         /* centers everything */
+    padding: 80px 20px;        /* top/bottom space */
+    min-height: 85vh;/* fills full screen height */
+
+  }
+
+
+  /* The tagline above the title */
+  #home p.tagline {
+    color: #7eb3ff;
+    font-size: 18px;
+    letter-spacing: 4px;        /* spreads letters apart */
+    margin-bottom: 20px;
+  }
+
+/* Big title */
+  #home h1 {
+    color: #802392;
+    font-size: 70px;             /* very large */
+    font-weight: 800;            /* extra bold */
+    line-height: 1;              /* tight line spacing */
+    margin-bottom: 50px;
+  }
+
+  #home p {
+    color: #995FA3;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+
+  /* ── Buttons ── */
+  .btn {
+    background: #004E64;
+    color: #FFB8D1;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+  }
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* Contact section */
+#contact {
+  padding: 80px 40px;
+  text-align: center;
+  background: #f0f4ff;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: #003f7f;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* The white box that wraps the form */
+.form-box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;       /* stops it getting too wide */
+  margin: 0 auto;         /* centers it on the page */
+}
+
+/* Each label + input pair */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;       /* labels align left inside the box */
+}
+
+.form-group label {
+  display: block;         /* label sits above the input */
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Shared style for both input and textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;            /* fills the form box */
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;          /* removes default blue glow */
+}
+
+/* Input highlight when clicked */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #003f7f;
+}
+
+/* Message box taller than a normal input */
+.form-group textarea {
+  height: 130px;
+  resize: none;           /* stops user dragging to resize */
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #003f7f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;    /* slightly lighter on hover */
+}
+
+  /* ── Alternating section backgrounds ── */
+  #home   { background: #DEE2FF; }
+  #events { background: #f0f4ff; }
+  #team   { background: white; }
+  #contact{ background: #FFB8D1; }
+

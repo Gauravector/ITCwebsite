@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us — ITC IITB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span>ITC IITB</span>
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="about.html">About Us</a>
+    <a class="btn" href="team.html">Meet the Team</a>
+    <a class="btn" href="events.html">Events</a>
+    <a class="btn" href="contact.html">Contact</a>
+  </nav>
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to get in touch with us, please fill out the form below or contact us directly.</p>
+    <p>Our team is always happy to hear from you and will do our best to respond as soon as possible.</p>
+
+    <div class="form-box">
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea id="msg" placeholder="Write your message here..."></textarea>
+      </div>
+
+      <button onclick="submitForm()">Send Message</button>
+
+      <p id="success" style="display:none; color:green;">
+        ✅ Message sent successfully!
+      </p>
+
+    </div>
+    </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<footer>
+  <p style="text-align: center;padding: 10px;">&copy; 2026 ITC IITB. All rights reserved.</p>
+</footer>
