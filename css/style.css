@@ -133,7 +133,7 @@
   transform: translateY(-6px);
 }
 
-/* Initials circle */
+
 .avatar {
   width: 80px;
   height: 80px;
@@ -171,7 +171,7 @@
   color: #7b5ef8;
   margin-bottom: 40px;
 }
-/* Two column layout */
+
 .about-content {
   display: flex;             
   gap: 60px;                  
@@ -201,7 +201,7 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
-  /* Contact section */
+
 #contact {
   padding: 80px 40px;
   text-align: center;
@@ -261,7 +261,6 @@
   resize: none;          
 }
 
-/* Submit button */
 button {
   width: 100%;
   padding: 14px;
@@ -286,7 +285,7 @@ button:hover {
 footer {
   background: #b2eef5;
   text-align: center;
-  padding: 16px;        /* small padding — just enough for one line */
+  padding: 16px;       
   font-size: 14px;
   color: #333;
 }
