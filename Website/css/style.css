@@ -1,20 +1,18 @@
 
-
-  /* ── Reset: remove default browser spacing ── */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  /* ── Page background and font ── */
+  
   body {
     font-family: Arial, sans-serif;
-    background: #DDFDFE;
+    background: #EDE7B1;
     color: #222;
   }
 
-  /* ── Navbar ── */
+
   nav {
     background: #25A18E;
     padding: 16px 40px;
@@ -26,45 +24,43 @@
     color: #FFB8D1;
     font-weight: bold;
     font-size: 20px;
-    margin-right: auto; /* pushes links to the right */
+    margin-right: auto; 
   }
 
 
-  /* ── Each section ── */
+
   section {
     padding: 60px 80px;
   }
   section h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #003f7f;
+    color: #802392;
   }
 
   /* Home hero section */
   #home {
-    background: #0a1628;        /* dark blue background */
+    background: #0a1628;      
     color: white;
-    text-align: center;         /* centers everything */
-    padding: 80px 20px;        /* top/bottom space */
-    min-height: 85vh;/* fills full screen height */
+    text-align: center;       
+    padding: 80px 20px;       
+    min-height: 85vh;
 
   }
 
 
-  /* The tagline above the title */
   #home p.tagline {
     color: #7eb3ff;
     font-size: 18px;
-    letter-spacing: 4px;        /* spreads letters apart */
+    letter-spacing: 4px;        
     margin-bottom: 20px;
   }
 
-/* Big title */
   #home h1 {
-    color: #802392;
-    font-size: 70px;             /* very large */
-    font-weight: 800;            /* extra bold */
-    line-height: 1;              /* tight line spacing */
+    color: #D90368;
+    font-size: 70px;             
+    font-weight: 800;           
+    line-height: 1;              
     margin-bottom: 50px;
   }
 
@@ -75,7 +71,6 @@
     margin-bottom: 32px;
   }
 
-  /* ── Buttons ── */
   .btn {
     background: #004E64;
     color: #FFB8D1;
@@ -85,20 +80,127 @@
     font-weight: bold;
     font-size: 15px;
   }
-
-  /* ── Cards ── */
-  .card {
-    background: white;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 16px;
-    border: 1px solid #e0e0e0;
+  #homel {
+    background: #0a1628;      
+    color: white;
+    text-align: center;       
+    padding: 80px 20px;       
+    min-height: 30vh;
   }
-  .card h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
+  #homel h1 {
+    color: #D90368;
+    font-size: 70px;             
+    font-weight: 800;           
+    line-height: 1;              
+    margin-bottom: 50px;
   }
+  
+  #team {
+  padding: 80px 60px;
+  background: #0e1628;
+  text-align: center;
+  color: white;
+}
 
+#team h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: #1a2540;
+  border: 1px solid #2a3550;
+  border-radius: 16px;
+  padding: 30px 20px;
+  transition: transform 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Initials circle */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #7b5ef8;
+  color: #EDE7B1;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #7b5ef8;
+}
+
+  #about {
+  padding: 80px 120px;
+  background: #EDE7B1;        
+  color: white;
+}
+
+#about h2 {
+  text-align: center;        
+  font-size: 40px;
+  color: #7b5ef8;
+  margin-bottom: 40px;
+}
+/* Two column layout */
+.about-content {
+  display: flex;             
+  gap: 60px;                  
+  align-items: center;       
+  margin-top: 40px;
+}
+
+.about-text {
+  flex: 1.2;          
+}
+
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;                
+  border-radius: 16px;        
+  object-fit: cover;          
+}
+#about p {
+  text-align: left;           
+  max-width: 550px;           
+  line-height: 1.2;         
+  color: #995FA3;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
   /* Contact section */
 #contact {
   padding: 80px 40px;
@@ -117,51 +219,46 @@
   margin-bottom: 30px;
 }
 
-/* The white box that wraps the form */
 .form-box {
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 16px;
   padding: 40px;
-  max-width: 500px;       /* stops it getting too wide */
-  margin: 0 auto;         /* centers it on the page */
+  max-width: 500px;      
+  margin: 0 auto;        
 }
 
-/* Each label + input pair */
 .form-group {
   margin-bottom: 20px;
-  text-align: left;       /* labels align left inside the box */
+  text-align: left;         
 }
 
 .form-group label {
-  display: block;         /* label sits above the input */
+  display: block;         
   font-size: 14px;
   font-weight: bold;
   color: #333;
   margin-bottom: 6px;
 }
 
-/* Shared style for both input and textarea */
 .form-group input,
 .form-group textarea {
-  width: 100%;            /* fills the form box */
+  width: 100%;            
   padding: 12px;
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  outline: none;          /* removes default blue glow */
+  outline: none;          
 }
 
-/* Input highlight when clicked */
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #003f7f;
 }
 
-/* Message box taller than a normal input */
 .form-group textarea {
   height: 130px;
-  resize: none;           /* stops user dragging to resize */
+  resize: none;          
 }
 
 /* Submit button */
@@ -178,12 +275,18 @@ button {
 }
 
 button:hover {
-  background: #1565c0;    /* slightly lighter on hover */
+  background: #1565c0;    
 }
 
-  /* ── Alternating section backgrounds ── */
-  #home   { background: #DEE2FF; }
+  #home   { background: #EDE7B1; }
   #events { background: #f0f4ff; }
   #team   { background: white; }
   #contact{ background: #FFB8D1; }
 
+footer {
+  background: #b2eef5;
+  text-align: center;
+  padding: 16px;        /* small padding — just enough for one line */
+  font-size: 14px;
+  color: #333;
+}
